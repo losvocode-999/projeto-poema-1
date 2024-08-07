@@ -3,7 +3,8 @@ from django.contrib import admin
 from django.urls import path
 
 from todos.views import login
-from . import views
+from todos import views
+
 
 
 urlpatterns = [

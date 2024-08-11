@@ -6,11 +6,11 @@ def login(request):
 
 def usuarios(request):
     novo_usuario = usuario()
-    novo_usuario.nome = request.POST.get('nome')
-    novo_usuario.idade = request.POST.get('senha')
+    novo_usuario.Nome = request.post.get('nome')
+    novo_usuario.senha = request.post.get('senha')
     novo_usuario.save()
 
-    return render(request,'usuario/usuarios.html',usuarios)
+    return render(request,'todos/home.html',usuarios)
 
 usuario = {
     'usuarios': usuario.objects.all()

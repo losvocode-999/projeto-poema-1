@@ -113,12 +113,12 @@ body {
     <div class="page">
         
 
-        <form method="POST" class="formLogin" action="{% url 'listagem_usuarios' %}">
+        <form method="post" class="formLogin" action="{% url 'home' %}">
             {% csrf_token %}
             <h1>Login</h1>
             <p>Digite os seus dados de acesso no campo abaixo.</p>
             <label for="email">nome</label>
-            <input name="nome" type="email" placeholder="Digite seu e-mail" autofocus="true" />
+            <input name="nome" type="text" placeholder="Digite seu nome" autofocus="true" />
             <label for="password">Senha</label>
             <input name="senha" type="password" placeholder="Digite seu e-mail" />
             <a href="/">Esqueci minha senha</a>

@@ -1,0 +1,27 @@
+
+/*Fonte adicionada externamnente. Fonte: "Cordelina"*/
+@font-face {
+  font-family: 'cordelina';
+  src: url('fonts/cordelina.otf') format('opentype');
+}
+
+.hero {
+  font-family: cordelina, sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("midia/capa1.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #ffff;
+}
+#boas-vindas{
+  font-family: cordelina, sans-serif;
+
+}
+
+/*Adicionar os estilos retirados por mim.s*/
+/*Alinhar todos os link horizontalmnente, na parte do Cabeçalho.*/
+/*Adicionar os componentes necessários que linkam com a página de login*/
+/*Buscar */

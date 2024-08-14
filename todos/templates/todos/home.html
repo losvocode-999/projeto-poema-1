@@ -4,125 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projeto cordel</title>
-    
-    <style>
-        /*fonte jost que importei do google fonts*/
-
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-
-/*coloquei a margem do body em 0px para evitar futuras dores de cabeça com o posicionamento das divs*/
-
-body{
-    margin: 0px;
-    height: 200em;
-}
-
-header{
-    background-color: #FABC48;
-    text-align: center;
-    padding: 50px;
     opacity: 0.95;
 
-    background-image: linear-gradient(to bottom, #FABC48,#FAA348);
-
-    z-index: 1;
-}
-
-footer{
-    background-color: #FAA348;
-    z-index: 1;
-
-    position: fixed;
-    width: 100%;
-
-    opacity: 0.95;
-}
-
-footer > a{
-    text-decoration: none;
-    color: white;
-    margin: 10px;
-}
-
-
-/*css que usei para fixar o header no topo da pagina*/
 #fixed-header{
     position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-    background-color: #FABC48;
-    text-align: center;
-}
-
-/*background da pagina de boas vindas*/
-article{
-    height: 100vh;
-    background: url(img/xilogravura-elemento-comum-na-literatura-de-cordel-uma-das-expressoes-da-cultura-popular-do-nordeste.jpg) no-repeat bottom center scroll;
-    background-size: cover;
-
-    background-attachment: fixed;
-
-    margin-top: 50px;
-}
-
-/*cor cinza que eu coloquei em cima da imagem de xilogravura*/
-#color{
-    background-color: lightgray;
-    height: 100vh;
-    opacity: 0.6;
-
-    
-    font-size: 68px;
-}
-
-#color > p{
-    position: relative;
-    top: 50%;
-    width: 50%;
-    transform: translate(50%,-50%);
-}
-
-
-/*div com o cordel de boas vindas*/
-#boas-vindas{
-    background-color: #FAB646;
-    height: 425px;
-
-    font-family: jost;
-}
-
-#boas-vindas > p{
-    margin-left: 70px;
-    font-size: 30px;
-}
-
-#boas-vindas > h1{
-    margin-left: 50px;
-    font-size: 45px;
-}
-
-    </style>
 </head>
 <body>
-
-    <header id="fixed-header">
-        PROJETO CORDEL
+    <header> <!--Cabeçalho linkável, para conexão com as seções e páginas. -->
+        <nav>
+           <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#cordeis">Cordéis</a></li>
+            <li><a href="#cadastro_login">Cadastro/login</a></li>
+           </ul>
+        </nav>
     </header>
-
-    <!-- o href esta com o "#" pois sera onde colocaremos o link da tela de login -->
-    
+    <!-- o href esta com o "#" pois sera onde colocaremos o link da tela de login --> 
     <footer>
         <a href="#">home</a>
     </footer>
 
-  <main>
-    <article>
-       <div id="color">
-            <p>seja bem vindo ao <STRONG>Projeto Cordel</STRONG></p>
+    <main>
+         <!-- Seção Início --> 
+        <section>
+       <div class="hero" id="#inicio">
+            <h1>Cordeleiro</h1>
+            <p>A poesia do sertão em suas mãos</p>
+            <a href="#sobre" class="bnt">Saiba Mais</a>
         </div>
-    </article>
+    </section>
+    </main>
 
    <div id="boas-vindas">
     <h1>muito obrigado pela sua visita!</h1>
@@ -136,6 +48,7 @@ article{
         Nosso modo de pensar. <br>
     </p>
    </div>
-  </main>
+   <!--Rodapé-->
+   <footer>@Cordeleiro</footer>
 </body>
 </html>

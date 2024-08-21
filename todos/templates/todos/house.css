@@ -1,27 +1,114 @@
-
-/*Fonte adicionada externamnente. Fonte: "Cordelina"*/
 @font-face {
   font-family: 'cordelina';
   src: url('fonts/cordelina.otf') format('opentype');
 }
 
-.hero {
-  font-family: cordelina, sans-serif;
-  height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  font-family: cordelina, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #000000;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  align-items: center;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+.hero {
+  height: 100vh;
+  font-family: cordelina, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   background-image: url("midia/capa1.png");
   background-size: cover;
   background-position: center;
   position: relative;
-  color: #ffff;
-}
-#boas-vindas{
-  font-family: cordelina, sans-serif;
-
+  color: #fff;
+  padding: 6rem;
+  scroll-behavior: smooth;
 }
 
-/*Adicionar os estilos retirados por mim.s*/
-/*Alinhar todos os link horizontalmnente, na parte do Cabeçalho.*/
-/*Adicionar os componentes necessários que linkam com a página de login*/
-/*Buscar */
+.hero h1 {
+  position: relative;
+  font-size: 7.3rem;
+  top: 2rem;
+  right: 2rem;
+  line-height: 1.2;
+}
+
+.subtitulo {
+  position: relative;
+  font-size: 1.9rem;
+  top: 0.9rem;
+  right: 1rem;
+}
+
+.sobre {
+  text-align: center;
+  font-size: 70px;
+  position: relative;
+  padding-top: 30px;
+  height: auto;
+  scroll-behavior: smooth;
+  font-weight: 100;
+  margin-bottom: 0; /* Remover o espaço abaixo da seção "Sobre" */
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.boas-vindas {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+  justify-content: center;
+  text-align: justify;
+  width: 700x;
+  height: 550px;
+  font-size: 30px;
+}
+
+.corde {
+  text-align: center;
+  font-size: 70px;
+  background-color: #000000;
+  position: relative;
+  padding-top: 30px;
+  margin-top: 0; /* Remover o espaçamento acima da seção "Cordeis" */
+  height: auto; /* Ajustar a altura conforme necessário */
+  color: white;
+  padding: 1rem 2rem; /* Reduzir o padding vertical */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Alinhar verticalmente a seção "Cordeis" */
+}

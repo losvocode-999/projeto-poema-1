@@ -4,51 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projeto cordel</title>
-    opacity: 0.95;
     <!--Bootstrap adicionado-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="house.css">
 </head>
 <body>
-    <header> <!--Cabeçalho linkável, para conexão com as seções e páginas. -->
+    <header>     
         <nav>
            <ul>
             <li><a href="#inicio">Início</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#cordeis">Cordéis</a></li>
-            <li><a href="#cadastro_login">Cadastro/login</a></li>
+            <li><a href="cadastro-login.html">Cadastro/login</a></li>
            </ul>
         </nav>
     </header>
-    <!-- o href esta com o "#" pois sera onde colocaremos o link da tela de login --> 
-    <footer>
-        <a href="#">home</a>
-    </footer>
-
+    
     <main>
-         <!-- Seção Início --> 
-        <section>
-       <div class="hero" id="#inicio">
+        <section id="inicio" class="hero">
             <h1>Cordeleiro</h1>
-            <p>A poesia do sertão em suas mãos</p>
-            <a href="#sobre" class="bnt">Saiba Mais</a>
+            <p class="subtitulo">A poesia do sertão em suas mãos</p>
+    
+        </section>
+        
+        <section id="sobre"> 
+            <h2 class="sobre">Sobre</a></h2>
+    
+            <div class="container">
+            <p class="boas-vindas">
+                O Cordeleiro foi criado por alunos do curso de Informática do IEMA Pleno Matões, com a missão de conectar escritores e leitores apaixonados pela literatura de cordel e nordestina. Nosso objetivo é promover a criatividade, incentivar a produção literária, e fortalecer a leitura e a escrita, resgatando os valores culturais do Nordeste e do Brasil.
+            </p>
         </div>
-    </section>
-    </main>
+        </section>
 
-   <div id="boas-vindas">
-    <h1>muito obrigado pela sua visita!</h1>
-    <p> 
-        Seja bem-vindo, amigo(a), <br>
-        À poesia popular! <br>
-        Desejamos que você <br>
-        Possa se emocionar, <br>
-        Recitar, cantar, sorrir, <br>
-        Entre, venha refletir <br>
-        Nosso modo de pensar. <br>
-    </p>
-   </div>
-   <!--Rodapé-->
-   <footer>@Cordeleiro</footer>
+        <section id="cordeis">
+            <div class="corde">
+                <h2>Cordéis</h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cordeleiro. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
